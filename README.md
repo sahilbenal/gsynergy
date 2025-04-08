@@ -1,2 +1,2 @@
 # gsynergy
-Gsynergy public Git repository
+Gsynergy public Git repository.
