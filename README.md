@@ -1,6 +1,11 @@
 # gsynergy
 video link : <a href="https://drive.google.com/file/d/133hB3g202zpZ0QViZwDGMfJRM7xjoyWg/view?usp=drive_link">(link for the explination video)</a>
 
+# gsynergy
+
+**Video Link:** [Link for the explanation video](https://drive.google.com/file/d/133hB3g202zpZ0QViZwDGMfJRM7xjoyWg/view?usp=drive_link)
+
+
 # 🚀 Data Pipeline Deployment Guide
 
 This guide provides a step-by-step walkthrough for setting up a data pipeline using **Azure Data Lake Storage Gen2**, **Azure Databricks**, and **Azure Data Factory (ADF)**.
