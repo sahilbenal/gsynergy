@@ -1,6 +1,2 @@
 # gsynergy
-Gsynergy public Git repository.
-<video width="600" controls>
-  <source src="https://www.youtube.com/shorts/P4DItTkeRAQ" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+video link : [https://drive.google.com/file/d/133hB3g202zpZ0QViZwDGMfJRM7xjoyWg/view?usp=drive_link](sahil_benal_video)
