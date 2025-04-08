@@ -1,5 +1,5 @@
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"fact.averagecosts.dlm.gz",
@@ -9,7 +9,7 @@
 "table_name":"fact_averagecosts"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"fact.transactions.dlm.gz",
@@ -19,7 +19,7 @@
 "table_name":"fact_transactions"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.clnd.dlm.gz",
@@ -29,7 +29,7 @@
 "table_name":"hier_clnd"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.hldy.dlm.gz",
@@ -39,7 +39,7 @@
 "table_name":"hier_hldy"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.invloc.dlm.gz",
@@ -49,7 +49,7 @@
 "table_name":"hier_invloc"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.invstatus.dlm.gz",
@@ -59,7 +59,7 @@
 "table_name":"hier_invstatus"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.possite.dlm.gz",
@@ -69,7 +69,7 @@
 "table_name":"hier_possite"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.pricestate.dlm.gz",
@@ -79,7 +79,7 @@
 "table_name":"hier_pricestate"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.prod.dlm.gz",
@@ -89,7 +89,7 @@
 "table_name":"hier_prod"
 }
 {
-"account_key":"fLqWvA+hadRu4xEWSS8xGdxG7iKIB3YnSIeM4gyhAsyG+3BaMwDd/17o+9D824wCZiEQEetfEaDq+AStzm4VeA==",
+"account_key":"",
 "container_name":"raw",
 "header":"True",
 "path":"hier.rtlloc.dlm.gz",
