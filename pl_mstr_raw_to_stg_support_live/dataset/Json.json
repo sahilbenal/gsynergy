@@ -1,0 +1,62 @@
+{
+    "name": "Json",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureDataLakeStorage1",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "container_name": {
+                "type": "string"
+            },
+            "file_name": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().file_name",
+                    "type": "Expression"
+                },
+                "fileSystem": {
+                    "value": "@dataset().container_name",
+                    "type": "Expression"
+                }
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "account_key": {
+                    "type": "string"
+                },
+                "container_name": {
+                    "type": "string"
+                },
+                "header": {
+                    "type": "string"
+                },
+                "path": {
+                    "type": "string"
+                },
+                "primary_key": {
+                    "type": "string"
+                },
+                "sep": {
+                    "type": "string"
+                },
+                "storage_account_name": {
+                    "type": "string"
+                },
+                "table_name": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

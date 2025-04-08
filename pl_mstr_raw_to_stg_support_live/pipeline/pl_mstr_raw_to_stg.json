@@ -1,0 +1,137 @@
+{
+    "name": "pl_mstr_raw_to_stg",
+    "properties": {
+        "activities": [
+            {
+                "name": "Lookup",
+                "type": "Lookup",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "JsonSource",
+                        "storeSettings": {
+                            "type": "AzureBlobFSReadSettings",
+                            "recursive": true,
+                            "enablePartitionDiscovery": false
+                        },
+                        "formatSettings": {
+                            "type": "JsonReadSettings"
+                        }
+                    },
+                    "dataset": {
+                        "referenceName": "Json",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "container_name": {
+                                "value": "@pipeline().parameters.container_name",
+                                "type": "Expression"
+                            },
+                            "file_name": {
+                                "value": "@pipeline().parameters.file_name",
+                                "type": "Expression"
+                            }
+                        }
+                    },
+                    "firstRowOnly": false
+                }
+            },
+            {
+                "name": "ForEach",
+                "type": "ForEach",
+                "dependsOn": [
+                    {
+                        "activity": "Lookup",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "items": {
+                        "value": "@activity('Lookup').output.value",
+                        "type": "Expression"
+                    },
+                    "isSequential": false,
+                    "activities": [
+                        {
+                            "name": "raw_to_stage",
+                            "type": "DatabricksNotebook",
+                            "dependsOn": [],
+                            "policy": {
+                                "timeout": "0.12:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "typeProperties": {
+                                "notebookPath": "/Users/sahilibenal000@gmail.com/raw_to_stage",
+                                "baseParameters": {
+                                    "storage_account_name": {
+                                        "value": "@item().storage_account_name",
+                                        "type": "Expression"
+                                    },
+                                    "container_name": {
+                                        "value": "@item().container_name",
+                                        "type": "Expression"
+                                    },
+                                    "path": {
+                                        "value": "@item().path",
+                                        "type": "Expression"
+                                    },
+                                    "header": {
+                                        "value": "@item().header",
+                                        "type": "Expression"
+                                    },
+                                    "sep": {
+                                        "value": "@item().sep",
+                                        "type": "Expression"
+                                    },
+                                    "table_name": {
+                                        "value": "@item().table_name",
+                                        "type": "Expression"
+                                    },
+                                    "primary_key": {
+                                        "value": "@item().primary_key",
+                                        "type": "Expression"
+                                    },
+                                    "account_key": {
+                                        "value": "@item().account_key",
+                                        "type": "Expression"
+                                    }
+                                }
+                            },
+                            "linkedServiceName": {
+                                "referenceName": "AzureDatabricks1",
+                                "type": "LinkedServiceReference"
+                            }
+                        }
+                    ]
+                }
+            }
+        ],
+        "parameters": {
+            "container_name": {
+                "type": "string",
+                "defaultValue": "metadata"
+            },
+            "file_name": {
+                "type": "string",
+                "defaultValue": "New Text Document.json"
+            }
+        },
+        "annotations": [],
+        "lastPublishTime": "2025-04-07T19:42:13Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}

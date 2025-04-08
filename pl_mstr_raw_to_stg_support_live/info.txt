@@ -1,0 +1,6 @@
+selected resource name:		pl_mstr_raw_to_stg
+selected resource type:		pipeline
+factory name:			gsadfsahilbenal
+factory location:		eastus
+subscription id:		9c319a1e-0481-47cc-bb4b-7be0615b0d3f
+time of download (UTC):		Tue, 08 Apr 2025 15:25:51 GMT
